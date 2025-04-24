@@ -8,3 +8,11 @@ describe('verifyPassword returns false for too-short password length', () => {
         expect(result.length).toBe(false);
     });
 });
+
+describe('verifyPassword returns false for missing lowercase letter', () => {
+    it('should return false for missing lowercase letter', () => {
+        const result = verifyPassword('NOLOWERCASE1!');
+        expect(result.pass).toBe(false);
+        expect(result.lowercase).toBe(false);
+    });
+});
