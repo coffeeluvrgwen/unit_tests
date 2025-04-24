@@ -36,3 +36,9 @@ describe('verifyEmail return true for valid email', () => {
         expect(verifyEmail('example@example.com')).toBe(true);
     });
 });
+
+describe('verifyEmail returns true for emails with hyphens and underscores', () => {
+    it('should return true for emails with hyphens and underscores', () => {
+        expect(verifyEmail('example_email@example-example.com')).toBe(true);
+    });
+});
