@@ -33,3 +33,11 @@ describe('verifyPassword returns false for missing digit', () => {
     });
 });
 
+describe('verifyPassword returns false for missing symbol', () => {
+    it('should return false for missing symbol', () => {
+        const result = verifyPassword('NoSymbol1');
+        expect(result.pass).toBe(false);
+        expect(result.symbol).toBe(false);
+    });
+});
+
