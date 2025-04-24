@@ -24,3 +24,9 @@ describe('verifyEmail returns false for incorrect syntax', () => {
         expect(verifyEmail('example@.com')).toBe(false);
     });
 });
+
+describe('verifyEmail returns false for invalid domain', () => {
+    it('should return false for invalid domain', () => {
+        expect(verifyEmail('example@com')).toBe(false);
+    });
+});
