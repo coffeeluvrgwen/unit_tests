@@ -24,3 +24,12 @@ describe('verifyPassword returns false for missing uppercase letter', () => {
         expect(result.uppercase).toBe(false);
     });
 });
+
+describe('verifyPassword returns false for missing digit', () => {
+    it('should return false for missing digit', () => {
+        const result = verifyPassword('NoDigit!');
+        expect(result.pass).toBe(false);
+        expect(result.digit).toBe(false);
+    });
+});
+
