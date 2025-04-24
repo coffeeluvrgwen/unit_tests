@@ -49,3 +49,16 @@ describe('verifyPassword returns false for invalid characters', () => {
     });
 });
 
+describe('verifyPassword returns true for valid password', () => {
+    it('should return true for valid password', () => {
+        const result = verifyPassword('Abcdefg#1');
+        expect(result.pass).toBe(true);
+        expect(result.length).toBe(true);
+        expect(result.lowercase).toBe(true);
+        expect(result.uppercase).toBe(true);
+        expect(result.digit).toBe(true);
+        expect(result.symbol).toBe(true);
+        expect(result.noInvalid).toBe(true);
+    });
+});
+
