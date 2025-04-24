@@ -18,3 +18,9 @@ describe('verifyEmail returns false for non string input', () => {
         expect(verifyEmail(123)).toBe(false);
     });
 });
+
+describe('verifyEmail returns false for incorrect syntax', () => {
+    it('should return false for incorrect syntax', () => {
+        expect(verifyEmail('example@.com')).toBe(false);
+    });
+});
