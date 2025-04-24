@@ -12,3 +12,9 @@ describe('verifyEmail returns false for empty string', () => {
         expect(verifyEmail('')).toBe(false);
     });
 });
+
+describe('verifyEmail returns false for non string input', () => {
+    it('should return false for non string input', () => {
+        expect(verifyEmail(123)).toBe(false);
+    });
+});
