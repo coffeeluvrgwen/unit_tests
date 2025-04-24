@@ -39,5 +39,13 @@ describe('verifyPassword returns false for missing symbol', () => {
         expect(result.pass).toBe(false);
         expect(result.symbol).toBe(false);
     });
+}); 
+
+describe('verifyPassword returns false for invalid characters', () => {
+    it('should return false for invalid characters', () => {
+        const result = verifyPassword('Invalid Char+');
+        expect(result.pass).toBe(false);
+        expect(result.noInvalid).toBe(false);
+    });
 });
 
