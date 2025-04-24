@@ -48,3 +48,9 @@ describe('verifyEmail returns true for emails with numbers', () => {
         expect(verifyEmail('example112@example.com')).toBe(true);
     });
 });
+
+describe('verifyEmail returns true for emails with special characters', () => {
+    it('should return true for emails with special characters', () => {
+        expect(verifyEmail('example#$@example.com')).toBe(true);
+    });
+});
