@@ -30,3 +30,9 @@ describe('verifyEmail returns false for invalid domain', () => {
         expect(verifyEmail('example@com')).toBe(false);
     });
 });
+
+describe('verifyEmail return true for valid email', () => {
+    it('should return true for valid email', () => {
+        expect(verifyEmail('example@example.com')).toBe(true);
+    });
+});
