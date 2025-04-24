@@ -16,3 +16,11 @@ describe('verifyPassword returns false for missing lowercase letter', () => {
         expect(result.lowercase).toBe(false);
     });
 });
+
+describe('verifyPassword returns false for missing uppercase letter', () => {
+    it('should return false for missing uppercase letter', () => {
+        const result = verifyPassword('nouppercase1!');
+        expect(result.pass).toBe(false);
+        expect(result.uppercase).toBe(false);
+    });
+});
