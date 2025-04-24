@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest';
 import verifyEmail from '../lib/verifyEmail.js';
 
 describe('verifyEmail returns false for missing @', () => {
-    it('should return false for invalid email addresses', () => {
+    it('should return false for missing @', () => {
         expect(verifyEmail('exampleexample.com')).toBe(false);
     });
 });
