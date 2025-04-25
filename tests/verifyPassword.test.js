@@ -62,3 +62,10 @@ describe('verifyPassword returns true for valid password', () => {
     });
 });
 
+describe('verifyPassword returns false for password ending in space', () => {
+    it('should return false for password ending in space', () => {
+        const result = verifyPassword('ValidPassword1! ');
+        expect(result.pass).toBe(false);
+        expect(result.noInvalid).toBe(false);
+    });
+});
