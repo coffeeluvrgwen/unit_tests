@@ -78,4 +78,9 @@ describe('convertToOld for integer 3999', () => {
         expect(convertToOld(3999)).toBe('MMMDCCCCLXXXXVIIII');
     });
 });
-    
+
+describe('convertToOld for integer 4000', () => {
+    it('should return null for 4000', () => {
+        expect(convertToOld(4000)).toBe(null);
+    });
+});
