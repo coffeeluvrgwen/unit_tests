@@ -49,7 +49,8 @@ describe('convertToOld for integer 8', () => {
     });
 });
 
-
-
-
-
+describe('convertToOld for integer 9', () => {
+    it('should return VIIII for 9', () => {
+        expect(convertToOld(9)).toBe('VIIII');
+    });
+});
