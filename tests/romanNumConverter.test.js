@@ -37,5 +37,12 @@ describe('convertToOld for integer 6', () => {
     });
 });
 
+describe('convertToOld for integer 7', () => {
+    it('should return VII for 7', () => {
+        expect(convertToOld(7)).toBe('VII');
+    });
+});
+
+
 
 
