@@ -84,3 +84,9 @@ describe('convertToOld for integer 4000', () => {
         expect(convertToOld(4000)).toBe(null);
     });
 });
+
+describe('convertToOld for integer 0', () => {
+    it('should return null for 0', () => {
+        expect(convertToOld(0)).toBe(null);
+    });
+});
