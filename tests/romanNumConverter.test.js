@@ -90,3 +90,9 @@ describe('convertToOld for integer 0', () => {
         expect(convertToOld(0)).toBe(null);
     });
 });
+
+describe('covertToOld for non-integer input', () => { 
+    it('should return null for non-integer input', () => {
+        expect(convertToOld('string')).toBe(null);
+    });
+});
