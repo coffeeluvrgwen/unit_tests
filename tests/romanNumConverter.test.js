@@ -72,4 +72,10 @@ describe('convertToOld for integer 3888', () => {
         expect(convertToOld(3888)).toBe('MMMDCCCLXXXVIII');
     });
 });
+
+describe('convertToOld for integer 3999', () => {
+    it('should return MMMDCCCCLXXXXVIIII for 3999', () => {
+        expect(convertToOld(3999)).toBe('MMMDCCCCLXXXXVIIII');
+    });
+});
     
