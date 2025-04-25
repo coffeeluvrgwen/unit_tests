@@ -25,3 +25,10 @@ describe('convertToOld for integer 4', () => {
     });
 });
 
+describe('convertToOld for integer 5', () => {
+    it('should return V for 5', () => {
+        expect(convertToOld(5)).toBe('V');
+    });
+});
+
+
