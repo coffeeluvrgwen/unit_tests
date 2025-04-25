@@ -96,3 +96,9 @@ describe('covertToOld for non-integer input', () => {
         expect(convertToOld('string')).toBe(null);
     });
 });
+
+describe('convertToOld for negative integer', () => {
+    it('should return null for negative integer', () => {
+        expect(convertToOld(-1)).toBe(null);
+    });
+});
