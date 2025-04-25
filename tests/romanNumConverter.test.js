@@ -18,3 +18,10 @@ describe('convertToOld for integer 3', () => {
         expect(convertToOld(3)).toBe('III');
     });
 });
+
+describe('convertToOld for integer 4', () => {
+    it('should return IIII for 4', () => {
+        expect(convertToOld(4)).toBe('IIII');
+    });
+});
+
