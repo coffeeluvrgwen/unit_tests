@@ -31,4 +31,11 @@ describe('convertToOld for integer 5', () => {
     });
 });
 
+describe('convertToOld for integer 6', () => {
+    it('should return VI for 6', () => {
+        expect(convertToOld(6)).toBe('VI');
+    });
+});
+
+
 
